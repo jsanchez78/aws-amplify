@@ -1,15 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
+import twitter from './icons/twitter.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App"
-      style = {{
-        backgroundColor: 'white'
-      }}>
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,6 +21,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="icons">
+      <img src={twitter} className="Twitter-logo" alt="logo"/>
+      </div>
     </div>
   );
 }

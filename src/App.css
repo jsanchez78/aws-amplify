@@ -2,8 +2,17 @@
   text-align: center;
 }
 
+.icons {
+  position: relative;
+  text-align: center;
+}
 .App-logo {
   height: 40vmin;
+  pointer-events: none;
+}
+
+.Twitter-logo {
+  height: 10vmin;
   pointer-events: none;
 }
 
