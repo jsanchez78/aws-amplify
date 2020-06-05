@@ -5,6 +5,7 @@
 .icons {
   position: relative;
   text-align: center;
+  bottom: 0px;
 }
 .App-logo {
   height: 40vmin;
@@ -14,6 +15,13 @@
 .Twitter-logo {
   height: 10vmin;
   pointer-events: none;
+}
+
+/* Four icons centered */
+.col {
+  float: left;
+  width: 25%;
+  padding: 5 px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
