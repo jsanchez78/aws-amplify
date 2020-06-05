@@ -26,22 +26,22 @@ function App() {
       <div className="icons">
         <div className="col">
           <a href="https://twitter.com/JacobSa50291880">
-            <img src={twitter} className="Twitter-logo" alt="logo"/>
+            <img src={twitter} className="Icon-logo" alt="logo"/>
           </a>
         </div>
         <div className="col">
           <a href="https://github.com/jsanchez78">
-            <img src={github} className="Twitter-logo" alt="logo"/>
+            <img src={github} className="Icon-logo" alt="logo"/>
           </a>
         </div>
         <div className="col">
           <a href="https://www.linkedin.com/in/jacob-sanchez-12b751142/">
-            <img src={twitter} className="Twitter-logo" alt="logo"/>
+            <img src={linkedin} className="Icon-logo" alt="logo"/>
           </a>
         </div>
         <div className="col">
           <a href="https://dev.to/jsanchez78">
-            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="jsanchez78's DEV Profile" height="30" width="30"/>
+            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" className="Icon-logo" alt="jsanchez78's DEV Profile" height="30" width="30"/>
           </a>
         </div>
       </div>
