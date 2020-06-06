@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import twitter from './icons/twitter.svg';
 import github from './icons/github.svg';
 import linkedin from './icons/linkedin.svg';
@@ -11,6 +10,12 @@ import Heart from "./images/heart-solid.svg";
 import Share from "./images/share-solid.svg";
 import Retweet from "./images/retweet-solid.svg";
 import "./Sass/app.scss";
+
+
+import useSticky from "./hooks/useSticky.js";
+import Navbar from "./Navbar";
+
+
 
 const SocialCard = () => (
   <div className="social_card">
@@ -43,13 +48,15 @@ const SocialCard = () => (
 
 
 function App() {
+  const  isSticky = useSticky()
   return (
     
     <div className="App">
-      
+     
       <div>
-      <SocialCard />
-    </div>
+        <SocialCard />
+      </div>
+      <Navbar sticky={isSticky} >
       <div className="icons">
         <a href="https://twitter.com/JacobSa50291880">
           <div className="col">
@@ -72,7 +79,9 @@ function App() {
           </div>
         </a>
       </div>
+      </Navbar>
     </div>
+    
   );
 }
 /*
