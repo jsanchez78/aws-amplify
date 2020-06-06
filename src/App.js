@@ -26,7 +26,10 @@ function App() {
       <div className="icons">
         <div className="col">
           
-            <img src={twitter} className="Icon-logo" alt="logo"/>
+            <img src={twitter} className="Icon-logo" alt="logo">
+            <a href="https://twitter.com/JacobSa50291880">
+            </a>
+            </img>
           
         </div>
         <div className="col">
