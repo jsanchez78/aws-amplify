@@ -25,9 +25,9 @@ function App() {
       </header>
       <div className="icons">
         <div className="col">
-          <a href="https://twitter.com/JacobSa50291880">
+          
             <img src={twitter} className="Icon-logo" alt="logo"/>
-          </a>
+          
         </div>
         <div className="col">
           <a href="https://github.com/jsanchez78">
