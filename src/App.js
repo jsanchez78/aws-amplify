@@ -1,7 +1,4 @@
 import React from 'react';
-import twitter from './icons/twitter.svg';
-import github from './icons/github.svg';
-import linkedin from './icons/linkedin.svg';
 import './App.css';
 
 import Image from "./images/Rooftop.JPG";
@@ -12,10 +9,11 @@ import Retweet from "./images/retweet-solid.svg";
 import "./Sass/app.scss";
 
 
-import useSticky from "./hooks/useSticky.js";
-import Navbar from "./Navbar";
+import Welcome from './icons.js';
 
+import Nav from './navbar.js';
 
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const SocialCard = () => (
   <div className="social_card">
@@ -45,53 +43,21 @@ const SocialCard = () => (
   </div>
 );
 
-
-
 function App() {
-  const  isSticky = useSticky()
+
+  
+
   return (
     
     <div className="App">
      
-      <div>
-        <SocialCard />
-      </div>
-      <Navbar sticky={isSticky} >
-      <div className="icons">
-        <a href="https://twitter.com/JacobSa50291880">
-          <div className="col">
-            <img src={twitter} className="Icon-logo" alt="logo"/>
-          </div>
-        </a>
-        <a href="https://github.com/jsanchez78">
-          <div className="col">
-            <img src={github} className="Icon-logo" alt="logo"/>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/jacob-sanchez-12b751142/">
-          <div className="col">
-            <img src={linkedin} className="Icon-logo" alt="logo"/>
-          </div>
-        </a>
-        <a href="https://dev.to/jsanchez78">
-          <div className="col">
-            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" className="Icon-logo" alt="jsanchez78's DEV Profile" height="72" width="72"/>
-          </div>
-        </a>
-      </div>
-      </Navbar>
+    <Nav/>
+    <SocialCard/>
+    <Welcome/>
+     
     </div>
     
   );
 }
-/*
-const App = () => (
-  <div>
-    <SocialCard />
-  </div>
-);
 
-ReactDOM.render(<App />, document.getElementById("app"));
-
-*/
 export default App;

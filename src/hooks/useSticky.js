@@ -36,7 +36,7 @@ useEffect(() => {
 }, [debounce, handleScroll])
 
 
-  return { isSticky, element }
+  return {isSticky, element}
 }
 
 export default useSticky
