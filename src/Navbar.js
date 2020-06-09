@@ -3,8 +3,6 @@ import './navbar.css';
 import Typist from 'react-typist';
 import pdf from './CSResume.pdf';
 
-/* Routing */
-import { Route, Switch , NavLink, HashRouter} from 'react-router-dom'
 
 const Nav = () => {
     return (

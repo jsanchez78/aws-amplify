@@ -14,10 +14,8 @@ import Icons from './icons/icons'
 
 import Nav from './navbar.js'
 
-import InfiniteScroll from 'react-infinite-scroll-component';
-
 /* Routing */
-import { Route, Switch , NavLink, HashRouter} from 'react-router-dom'
+import { Route, Switch , HashRouter} from 'react-router-dom'
 
 // We will create these two pages in a moment
 import AboutPage from './Pages/AboutPage'

@@ -1,8 +1,14 @@
-
-.ProjectsPage {
-  max-width: 1024px;
-  margin: 0 auto;
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
+.ProjectsPage {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
 /* Project Gallery */
 b {
   font-weight: bold;
@@ -49,6 +55,7 @@ h3{
   }
   
   .row {
+    display: flex;
     clear: both;
   }
   div {
@@ -78,7 +85,7 @@ img {
   
   /* Content */
   .content {
-    width: 45%;
+    width: 100%;
     margin: 20px;
     background-color: white;
     display: inline-block;

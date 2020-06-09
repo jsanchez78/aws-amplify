@@ -19,9 +19,11 @@ const ProjectsPage = () => {
          </h1>
   
   <div className = "row">
-
+    
       <div className = "content">
-        <img src={magic}  alt="MagicPaper"/>
+        <a>
+          <img src={magic}  alt="MagicPaper"/>
+        </a>
           <p className="description">
             <b>MagicPaper </b>
             Inspired by the wizardly world of Harry Potter, this iOS app displays an interactive Newspaper when hovered above images.
@@ -29,7 +31,9 @@ const ProjectsPage = () => {
       </div>
     
       <div className = "content">
-          <img src={github} alt="Github"/>
+          <a>
+            <img src={github} alt="Github"/>
+          </a>
           <p className="description">
             <b>GraphQL Client Framework </b>
             This project is a pure functional object-oriented design framework for composing and executing external GraphQL commands from Scala client programs.
@@ -40,7 +44,9 @@ const ProjectsPage = () => {
   <div className = "row">
 
           <div className = "content">
-              <img src={travel} alt="Chicago Travel Guide"/>
+              <a>
+                <img src={travel} alt="Chicago Travel Guide"/>
+              </a>
               <p className="description">
                 <b>Travel Guide </b>
                 Android app to navigate tasty places to eat while avoiding the Ronaaaa!
@@ -48,7 +54,9 @@ const ProjectsPage = () => {
           </div>
         
           <div className = "content">
-            <img src={led} alt="Chicago Travel Guide"/>
+            <a>
+              <img src={led} alt="Chicago Travel Guide"/>
+            </a>
             <p className="description">
               <b>LED Flow </b>
               LED music synchronization project with party mode for some sick beats
