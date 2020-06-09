@@ -9,9 +9,10 @@ const AboutPage = () => {
         <h1 id="About">
             <Typist>
                 <Typist.Delay ms={1000} />
-            <span id="nav_nums"> 01. </span> 
-            </Typist>
+                <span id="nav_nums"> 01. </span> 
                 About Me
+            </Typist>
+                
          </h1>
          <h3>
              Hello! I'm Jacob, a software engineer based in Chicago, IL. 

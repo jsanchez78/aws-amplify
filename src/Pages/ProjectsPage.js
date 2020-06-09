@@ -13,54 +13,45 @@ const ProjectsPage = () => {
         <h1 id="Projects">
             <Typist>
                 <Typist.Delay ms={1000} />
-            <span id="nav_nums"> 02. </span> 
-            </Typist>
+                <span id="nav_nums"> 02. </span> 
                 Projects
+            </Typist>
          </h1>     
-         
-<h2> Portfolio </h2>
-
-<div id = "categories_container">
-  <button class = "all" onclick = "filterSelection('all')">  All </button>
-  <button class = "category" onclick = "filterSelection('Personal')">  All </button>
-  <button class = "category" onclick = "filterSelection('School Projects')">  All </button>
-  <button class = "category" onclick = "filterSelection('Mobile')">  All </button>
- </div>
-
-<div class = "row">
-  <div class = "Personal column">
-      <div class = "content">
+<div className = "row">
+  <div className = "personal_column">
+      <div className = "content">
         <img src={magic}  alt="MagicPaper"/>
           <h4>MagicPaper</h4>
           <p>Inspired by the wizardly world of Harry Potter, this iOS app displays an interactive Newspaper when hovered above images.</p>
         </div>
     </div>
     
-      <div class = "Personal column">
-          <div class = "content">
+      <div className = "personal_column">
+          <div className = "content">
             <img src={github} alt="Github"/>
               <h4>GraphQL Client Framework</h4>
               <p>This project is a pure functional object-oriented design framework for composing and executing external GraphQL commands from Scala client programs.</p>
             </div>
         </div>
-        <div class = "School  column">
-            <div class = "content">
+  </div>
+  <div className = "row">
+        <div className = "personal_column">
+            <div className = "content">
               <img src={travel} alt="Chicago Travel Guide"/>
                 <h4>Travel Guide</h4>
                 <p>Android app to navigate tasty places to eat while avoiding the Ronaaaa!</p>
               </div>
           </div>
 
-          <div class = "School  column">
-            <div class = "content">
+          <div className = "personal_column">
+            <div className = "content">
               <img src={led} alt="Chicago Travel Guide"/>
                 <h4>LED Flow</h4>
                 <p>LED music synchronization project with party mode for some sick beats</p>
               </div>
           </div>
-</div>
-
-        </div>
+    </div>
+  </div>
     ) 
 }
 export default ProjectsPage
