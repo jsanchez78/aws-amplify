@@ -1,7 +1,7 @@
 import React from 'react'
 import Typist from 'react-typist'
 import './AboutPage.css'
-import { Link } from 'react-router-dom'
+
 
 const AboutPage = () => {
     return (
