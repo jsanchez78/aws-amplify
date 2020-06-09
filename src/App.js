@@ -9,7 +9,6 @@ import Share from "./images/share-solid.svg"
 import Retweet from "./images/retweet-solid.svg"
 import "./Sass/app.scss"
 
-
 import Icons from './icons/icons'
 
 import Nav from './navbar.js'
