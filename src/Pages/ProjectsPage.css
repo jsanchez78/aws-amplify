@@ -50,10 +50,14 @@ h3{
   }
   .row {
     display: flex;
+    height: auto;
+    width: auto;
   }
   
 /* Project Gallery */
 .personal_column {
+  display: flex;
+  height: auto;
   width: 50%;
   float: left;
   margin: 5px;
@@ -67,7 +71,7 @@ h3{
   display: table;
 }
 img {
-  width: auto;
+  width: 100%;
   height: auto;
 }
   /* Center website */
@@ -95,6 +99,8 @@ img {
   .content {
     background-color: white;
     padding: 10px;
+    height: auto;
+    width: auto;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
