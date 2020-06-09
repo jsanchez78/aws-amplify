@@ -15,6 +15,14 @@ import Nav from './navbar.js';
 
 import InfiniteScroll from 'react-infinite-scroll-component';
 
+/* Routing */
+import { Route, Switch , NavLink, HashRouter} from 'react-router-dom'
+
+// We will create these two pages in a moment
+import AboutPage from './Pages/AboutPage'
+import ProjectsPage from './Pages/ProjectsPage'
+
+
 const SocialCard = () => (
   <div className="social_card">
     <img src={Image} alt="Sample image" />
@@ -45,18 +53,22 @@ const SocialCard = () => (
 
 function App() {
 
-  
-
   return (
     
+    <HashRouter>
     <div className="App">
-     
+
+     <Switch>
+      <Route exact path="/About" component={AboutPage} />
+      <Route path="/:Projects" component={ProjectsPage} />
+     </Switch>
     <Nav/>
     <SocialCard/>
     <Welcome/>
      
     </div>
-    
+    </HashRouter>
+
   );
 }
 

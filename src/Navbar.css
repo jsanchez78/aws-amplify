@@ -3,7 +3,17 @@
 #navbar {
   overflow: hidden;
   background-color: #39747E;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  height: 80px;  /* 64 + 16px */
+  position: sticky;
+  -webkit-position: sticky;
+  /* negative top allows for 16 pixels of movement before sticking */
+  top: -16px; 
+  /* make sure header overlaps main*/
+  z-index: 1;
+  color: white;
+  text-align: center;
+  /* fix weird flickering issue in chrome: https://stackoverflow.com/a/22224884/286685 */
+  -webkit-backface-visibility: hidden;
 }
 
 /* Navbar links */
@@ -16,11 +26,27 @@
   text-decoration: none;
 }
 
+.navbar::before {
+    top: 48px; /* shadow is at bottom of element, so at 48 + 16 = 64px */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+/* COVER */
+.navbar::after {
+    /* linear gradient from background color to transparent acts as
+       a transition effect so the shadow appears gradually */
+       background: linear-gradient(white 10%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.4) 70%, transparent);
+       top: 0;
+       /* cover should fall over shadow */
+       z-index: 2;
+}
+
 #nav_nums {
     color: white;
     padding: 5px;
 }
-
+#link{
+  display: inline;
+}
 #type{
     display: inline;
 }
