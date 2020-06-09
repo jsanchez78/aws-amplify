@@ -4,36 +4,17 @@
   opacity: .85;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  padding-top: 75px;
-  bottom: 0px;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.Icon-logo {
-  height: 10vmin;
-  pointer-events: none;
-}
-
-/* Four icons centered */
+/* Four Projects centered => Move to separate Projects.css page */
 .col {
   float: left;
   width: 25%;
   padding: 5px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -49,13 +30,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

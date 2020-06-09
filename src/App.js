@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
 
-import Image from "./images/Rooftop.JPG";
-import User from "./images/user.jpg";
-import Heart from "./images/heart-solid.svg";
-import Share from "./images/share-solid.svg";
-import Retweet from "./images/retweet-solid.svg";
-import "./Sass/app.scss";
+/*  SVG Icons */
+import Image from "./images/Rooftop.JPG"
+import User from "./images/user.jpg"
+import Heart from "./images/heart-solid.svg"
+import Share from "./images/share-solid.svg"
+import Retweet from "./images/retweet-solid.svg"
+import "./Sass/app.scss"
 
 
-import Welcome from './icons.js';
+import Icons from './icons/icons'
 
-import Nav from './navbar.js';
+import Nav from './navbar.js'
 
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -57,15 +58,13 @@ function App() {
     
     <HashRouter>
     <div className="App">
-
      <Switch>
       <Route exact path="/About" component={AboutPage} />
       <Route path="/:Projects" component={ProjectsPage} />
      </Switch>
     <Nav/>
     <SocialCard/>
-    <Welcome/>
-     
+    <Icons/>
     </div>
     </HashRouter>
 

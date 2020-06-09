@@ -16,42 +16,48 @@ const ProjectsPage = () => {
                 <span id="nav_nums"> 02. </span> 
                 Projects
             </Typist>
-         </h1>     
-<div className = "row">
-  <div className = "personal_column">
+         </h1>
+  
+  <div className = "row">
+
       <div className = "content">
         <img src={magic}  alt="MagicPaper"/>
-          <h4>MagicPaper</h4>
-          <p>Inspired by the wizardly world of Harry Potter, this iOS app displays an interactive Newspaper when hovered above images.</p>
-        </div>
-    </div>
+          <p className="description">
+            <b>MagicPaper </b>
+            Inspired by the wizardly world of Harry Potter, this iOS app displays an interactive Newspaper when hovered above images.
+          </p>
+      </div>
     
-      <div className = "personal_column">
-          <div className = "content">
-            <img src={github} alt="Github"/>
-              <h4>GraphQL Client Framework</h4>
-              <p>This project is a pure functional object-oriented design framework for composing and executing external GraphQL commands from Scala client programs.</p>
-            </div>
-        </div>
+      <div className = "content">
+          <img src={github} alt="Github"/>
+          <p className="description">
+            <b>GraphQL Client Framework </b>
+            This project is a pure functional object-oriented design framework for composing and executing external GraphQL commands from Scala client programs.
+          </p>
+      </div>
+        
   </div>
   <div className = "row">
-        <div className = "personal_column">
-            <div className = "content">
-              <img src={travel} alt="Chicago Travel Guide"/>
-                <h4>Travel Guide</h4>
-                <p>Android app to navigate tasty places to eat while avoiding the Ronaaaa!</p>
-              </div>
-          </div>
 
-          <div className = "personal_column">
-            <div className = "content">
-              <img src={led} alt="Chicago Travel Guide"/>
-                <h4>LED Flow</h4>
-                <p>LED music synchronization project with party mode for some sick beats</p>
-              </div>
+          <div className = "content">
+              <img src={travel} alt="Chicago Travel Guide"/>
+              <p className="description">
+                <b>Travel Guide </b>
+                Android app to navigate tasty places to eat while avoiding the Ronaaaa!
+              </p>
           </div>
-    </div>
+        
+          <div className = "content">
+            <img src={led} alt="Chicago Travel Guide"/>
+            <p className="description">
+              <b>LED Flow </b>
+              LED music synchronization project with party mode for some sick beats
+            </p>
+          </div>  
   </div>
+
+</div>
+
     ) 
 }
 export default ProjectsPage
