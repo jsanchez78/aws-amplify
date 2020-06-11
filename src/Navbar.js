@@ -1,7 +1,7 @@
-import React from 'react';
-import './navbar.css';
-import Typist from 'react-typist';
-import pdf from './CSResume.pdf';
+import React from 'react'
+import './navbar.css'
+import Typist from 'react-typist'
+import pdf from './CSResume.pdf'
 
 
 const Nav = () => {

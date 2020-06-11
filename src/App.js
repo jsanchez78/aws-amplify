@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 import Icons from './icons/icons'
 
-import Nav from './navbar.js'
+import Nav from './navbar'
 
 /* Routing */
 import { Route, Switch , HashRouter} from 'react-router-dom'
