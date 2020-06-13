@@ -3,7 +3,7 @@ import './App.css'
 
 import Icons from './icons/icons'
 
-import Nav from './Navbar'
+import Nav from './Header/Navbar'
 
 /* Routing */
 import { Route, Switch , HashRouter} from 'react-router-dom'
