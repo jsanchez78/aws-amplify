@@ -17,7 +17,6 @@ function App() {
 
   return (
     
-
     <div className="App">
       <section className="Home">
         <h1 className="Intro">

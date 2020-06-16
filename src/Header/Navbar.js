@@ -6,16 +6,7 @@ import pdf from '../CSResume.pdf'
 
 import { Link, animateScroll as scroll } from "react-scroll"
 
-
-import ProjectsPage from '../Pages/ProjectsPage'
-
-function handleClick(e) {
-    e.preventDefault() // Prevent refreshing/loading of browser
-  }
-
-class Nav extends Component {
-    
-    render() {
+const Nav = () => {
         return (
         <div id="navbar">
             <a href={pdf} target="_blank" rel="nofollow noopener noreferrer" id="resume">
@@ -53,9 +44,7 @@ class Nav extends Component {
             </Link>
             
         </div>
-
         );
     }
-}
 
 export default Nav

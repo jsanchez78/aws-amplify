@@ -283,3 +283,12 @@ li {
     line-height: 12px;
 }
 
+
+#center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

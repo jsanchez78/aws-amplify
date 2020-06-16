@@ -19,8 +19,8 @@ class AboutPage extends Component{
 
     render (){
         return (
-            <section className="About">
-                
+        <section className="About">
+            <div id="center">
                 <h1 id="About">
                     <h3 className="Heading">
                     <Typist>
@@ -32,7 +32,8 @@ class AboutPage extends Component{
                     </Typist>
                     </h3>
                  </h1>
-                 
+            </div>
+
                  <div className="about_container">
                     <div className="content">
                         <div className ="content_description">

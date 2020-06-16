@@ -1,14 +1,15 @@
-.ProjectsPage {
-  max-width: 1000px;
-  position: relative;
-  margin: 0px auto;
-  padding: 150px 0px;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .Heading {
   font-size: 24px;
   position: relative;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
   align-items: center;
   width: 100%;
@@ -18,12 +19,12 @@
   padding: 50px;
 }
 
-
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 .ProjectsPage {
   max-width: 1324px;
   margin: 0 auto;
@@ -48,15 +49,6 @@ h1 {
     color: white;
     text-align: center;
 }
-h3{
-    color: white;
-    text-align: center;
-    opacity: .65;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 * {
     box-sizing: border-box;
   }
@@ -80,9 +72,6 @@ h3{
   clear: both;
 }
 
-div {
-  display: block;
-}
 
 /* Clear floats after image containers */
 .row::after {
@@ -137,25 +126,107 @@ a:-webkit-any-link {
    cursor: pointer;  
 }
 
-a {
-  text-decoration: none;
-  color: #333;
-}
 
 a img {
   border: none;
 }
 
-#work {
-  background: #eee;
+.work {
+  
   height: auto;
   margin-top: -30px;
   text-align: center;
   padding: 60px 0 60px 0;
   font-size: 26px;
   line-height: 40px;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
+.work a {
+  text-decoration: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25ch;
+  flex: 1 1 25ch;
+  color: white;
+}
+
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+}
+
+.work #magic {
+  background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.work #travel {
+  background: #ff3675;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.work #led {
+  background: #2fd6af;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.work #portfolioWebsite {
+  background: #ff3675;
+  -webkit-transition: background-image 0s ease;
+  transition: background-image 0s ease;
+}
+
+.work div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 20em;
+  overflow: hidden;
+  margin: 0.5rem;
+  background: #ffce00;
+}
+
+
+.work div h3 {
+  font-family: "Roboto Mono", monospace;
+    font-size: 2em;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    margin-right: 3em;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 .inner {
   max-width: 1024px;
   margin: 0 auto;
@@ -168,4 +239,149 @@ a img {
   */
 section {
   display: inline-block;
+}
+
+.MagicPaper {
+  background-color: var(--paper-green-a100);
+  color: var(--paper-grey-800);
+}
+
+#center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.work div .categories li, .projects div .resource li {
+  display: inline-block;
+}
+
+li {
+  padding: 5px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.work div .categories li:after, .projects div .resource li:after {
+  content: " | ";
+}
+
+.work div .categories, .projects div .resource {
+  position: relative;
+  left: 2rem;
+  padding-top: 1rem;
+}
+
+.work #magic {
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  text-align: -webkit-match-parent;
+  
+}
+.work #magic:hover {
+  background: url("./images/newsPaper.svg");
+  display: inline-flex;
+}
+
+.work #github {
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  text-align: -webkit-match-parent;
+  
+}
+.work #github:hover {
+  background: url("./images/graphQLGithubFramework.svg");
+  display: inline-flex;
+}
+
+.work #travel {
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  text-align: -webkit-match-parent;
+  
+}
+.work #travel:hover {
+  background: url("./images/travelGuide.svg");
+  display: inline-flex;
+}
+
+.work #led {
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  text-align: -webkit-match-parent;
+  
+}
+.work #led:hover {
+  background: url("../res/LEDBeats.png");
+  display: inline-flex;
+}
+
+.work #codeGenerator {
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  text-align: -webkit-match-parent;
+  
+}
+.work #codeGenerator:hover {
+  background: url("./images/codeGenerator.svg");
+  display: inline-flex;
+}
+
+
+.work #portfolioWebsite {
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  text-align: -webkit-match-parent;
+  
+}
+.work #portfolioWebsite:hover {
+  background: url("./images/portfolioWebsite.svg");
+  display: inline-flex;
+}
+
+
+.work div .res {
+  position: relative;
+  left: 2rem;
+  padding-top: 1rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 65vw;
+}
+
+.container {
+    width: 75vw;
 }

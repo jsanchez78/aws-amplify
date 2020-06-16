@@ -4,9 +4,10 @@
     justify-content: center;
     position: relative;
     text-align: center;
-    padding-top: 75px;
+    padding-top: 125px;
     bottom: 20px;
   }
+
   .Icon-logo {
     animation-name: bounce; 
     animation-duration: 1.0s;
@@ -22,16 +23,16 @@
     top: var(--offset);
     left: calc(50% - var(--logo-size) / 2);    
   }
+
 .col_icons {
-   
     padding: 5px;
     height: 72px;
     width: 72px;
     text-align: center;
     bottom: 50px;
-    
   }
-.container {
+  
+.containerIcons {
     position: relative;
   }
 

@@ -9,70 +9,87 @@ import led from "../res/LEDBeats.png"
 
   const ProjectsPage = () => {
       return (
-          <section className="ProjectsPage">
+    <section className="ProjectsPage">
+        <div id="center">
           <h1 id="ProjectsPage">
-              <h3 className="Heading">
-                <Typist>
-                  <Typist.Delay ms={1000} />
-                  <span id="nav_nums"> 02. </span> 
+            <h3 className="Heading">
+              <Typist>
+                <Typist.Delay ms={1000} />
+                <span id="nav_nums"> 02. </span> 
                   Projects
-                  <Typist.Backspace count={8} delay={200} />
-                  <span> Projects </span>
-                </Typist>
-              </h3>
+                <Typist.Backspace count={8} delay={200} />
+                <span> Projects </span>
+              </Typist>
+            </h3>
           </h1>
-
-    <div className="work">
-      <div id="inner">
-      <div className = "row">
-          <div className = "content">
-            <a href="https://github.com/jsanchez78/MagicPaper">
-              <img src={magic}  alt="MagicPaper"/>
-            </a>
-              <p className="description">
-                <b>MagicPaper </b>
-                Inspired by the wizardly world of Harry Potter, this iOS app displays an interactive Newspaper when hovered above images.
-              </p>
-          </div>
-      
-
-          <div className = "content">
-              <a href="https://github.com/jsanchez78/GraphQLClientFrameworkGithub">
-                <img src={github} alt="Github"/>
-              </a>
-              <p className="description">
-                <b>GraphQL Client Framework </b>
-                This project is a pure functional object-oriented design framework for composing and executing external GraphQL commands from Scala client programs.
-              </p>
-          </div>
-            
-      </div>
-
-
-        <div className = "row">
-              <div className = "content">
-                  <a href="https://github.com/jsanchez78/ChicagoTravelGuide">
-                    <img src={travel} alt="Chicago Travel Guide"/>
-                  </a>
-                  <p className="description">
-                    <b>Travel Guide </b>
-                    Android app to navigate tasty places to eat while avoiding the Ronaaaa!
-                  </p>
-              </div>
-              <div className = "content">
-                <a href="https://github.com/jsanchez78?tab=repositories">
-                  <img src={led} alt="LED Flow"/>
-                </a>
-                <p className="description">
-                  <b>LED Flow </b>
-                  LED music synchronization project with party mode for some sick beats
-                </p>
-              </div>  
         </div>
-
+        {/* Projects Gallery*/}
+      <div className="container">
+        <div className="work">
+          <a href="./MagicPaper.js" className="MagicPaper">
+            <div id="magic">
+                <h3>MagicPaper </h3>
+                <ul className="categories">
+                  <li>iOS</li>
+                  <li>Swift</li>
+                  <li>ARKit 3.5</li>
+                </ul>
+            </div>
+          </a>
+          <a href="https://github.com/jsanchez78/GraphQLClientFrameworkGithub">
+            <div id="github">
+                <h3>GraphQL Client Framework </h3>
+                <ul className="categories">
+                  <li>Scala</li>
+                  <li>GraphQL</li>
+                  <li>Github API</li>
+                </ul>
+            </div>
+          </a>
+          <a href="https://github.com/jsanchez78/ChicagoTravelGuide">
+            <div id="travel">
+                <h3>Travel Guide </h3>
+                  <ul className="categories">
+                    <li>Android NDK</li>
+                    <li>Java</li>
+                    <li>Gradle</li>
+                  </ul>
+            </div>
+          </a>
+          <a href="https://github.com/jsanchez78?tab=repositories">
+            <div id="led">
+                <h3>LED Flow </h3>
+                <ul className="categories">
+                    <li>Arduino</li>
+                    <li>C</li>
+                    <li>Piezoelectric sensor</li>
+                  </ul>
+            </div> 
+           </a>
+          <a href="https://github.com/jsanchez78/ChicagoTravelGuide">
+            <div id="codeGenerator">
+              <h3>Code Generator </h3>
+                <ul className="categories">
+                    <li>Java</li>
+                    <li>Intelij Platform</li>
+                    <li>JavaParser</li>
+                </ul>  
+            </div>
+          </a>
+          <a href="https://github.com/jsanchez78/LockFreeWarehouse">
+            <div id="portfolioWebsite">
+              <p id="res">Deployed site</p>
+              <h3>Personal Website</h3>
+                <ul className="categories">
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                </ul>  
+            </div>
+          </a>  
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
       );
 }
 export default ProjectsPage
