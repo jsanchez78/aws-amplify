@@ -5,8 +5,6 @@ import Icons from './icons/icons'
 
 import Nav from './Header/Navbar'
 
-/* Routing */
-import { Route, Switch , HashRouter} from 'react-router-dom'
 
 // We will create these two pages in a moment
 import AboutPage from './Pages/AboutPage'
@@ -14,10 +12,12 @@ import ProjectsPage from './Pages/ProjectsPage'
 
 import Typist from 'react-typist'
 
+
 function App() {
 
   return (
-  <HashRouter>
+    
+
     <div className="App">
       <section className="Home">
         <h1 className="Intro">
@@ -39,14 +39,12 @@ function App() {
       <AboutPage/>
       <ProjectsPage/>
 
-     <Switch>
-      <Route exact path="/About" component={AboutPage} />
-      <Route path="/:Projects" component={ProjectsPage} />
-     </Switch>
+
     <Nav/>
     <Icons/>
   </div>
-</HashRouter>
+
+
 
   );
 }

@@ -1,5 +1,9 @@
 /* Navbar */
 /* Style the navbar */
+Link {
+  display: inline;
+}
+
 a{
   color: rgb(136, 146, 176);
   display: inline;
@@ -96,5 +100,6 @@ a{
 .sticky + .content {
   padding-top: 60px;
 }
+
 
 
