@@ -4,20 +4,17 @@ import './AboutPage.css'
 
 import SocialCard from './SocialCard'
 
-class AboutPage extends Component{
+import { bounce } from 'react-animations';
 
-    constructor(props) {
-        super(props);
-        this.state = {currentPage: false};
-      }
-    
-      componentDidMount() {
-          this.setState({
-              currentPage: true
-          });
-      }
+import styled, { keyframes } from 'styled-components';
 
-    render (){
+const bounceAnimation = keyframes`${bounce}`;
+ 
+const BouncyDiv = styled.div`
+  animation: 2s ${bounceAnimation};
+`;
+
+const AboutPage = () => {
         return (
         <section className="About">
             <div id="center">
@@ -81,7 +78,6 @@ class AboutPage extends Component{
         </section> 
         
                  );
-    }
     
 }
 export default AboutPage

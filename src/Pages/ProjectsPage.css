@@ -344,13 +344,12 @@ li {
   -webkit-transition-duration: 2s;
   -webkit-transition-timing-function: ease;
   text-align: -webkit-match-parent;
-  
 }
+
 .work #portfolioWebsite:hover {
   background: url("./images/portfolioWebsite.svg");
   display: inline-flex;
 }
-
 
 .work div .res {
   position: relative;

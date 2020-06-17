@@ -76,6 +76,8 @@ a{
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     padding: 3px 20px 20px;
     font-size: 18px;
+
+    
 }
 .type {
   display: inline;
@@ -100,6 +102,3 @@ a{
 .sticky + .content {
   padding-top: 60px;
 }
-
-
-

@@ -26,7 +26,7 @@ import led from "../res/LEDBeats.png"
         {/* Projects Gallery*/}
       <div className="container">
         <div className="work">
-          <a href="./MagicPaper.js" className="MagicPaper">
+          <a href="https://github.com/jsanchez78/MagicPaper" className="MagicPaper">
             <div id="magic">
                 <h3>MagicPaper </h3>
                 <ul className="categories">
@@ -61,12 +61,12 @@ import led from "../res/LEDBeats.png"
                 <h3>LED Flow </h3>
                 <ul className="categories">
                     <li>Arduino</li>
-                    <li>C</li>
+                    <li>C++</li>
                     <li>Piezoelectric sensor</li>
                   </ul>
             </div> 
            </a>
-          <a href="https://github.com/jsanchez78/ChicagoTravelGuide">
+          <a href="https://github.com/jsanchez78/codeGenerator">
             <div id="codeGenerator">
               <h3>Code Generator </h3>
                 <ul className="categories">
@@ -76,7 +76,7 @@ import led from "../res/LEDBeats.png"
                 </ul>  
             </div>
           </a>
-          <a href="https://github.com/jsanchez78/LockFreeWarehouse">
+          <a href="https://github.com/jsanchez78/aws-amplify">
             <div id="portfolioWebsite">
               <p id="res">Deployed site</p>
               <h3>Personal Website</h3>
