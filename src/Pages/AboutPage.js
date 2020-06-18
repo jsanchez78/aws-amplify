@@ -30,7 +30,6 @@ const AboutPage = () => {
                     </h3>
                  </h1>
             </div>
-
                  <div className="about_container">
                     <div className="content">
                         <div className ="content_description">
