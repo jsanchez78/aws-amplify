@@ -19,6 +19,8 @@ import { bounce } from 'react-animations';
 
 import styled, { keyframes } from 'styled-components';
 
+import sharableIcon from './res/hashS.png'
+
 const bounceAnimation = keyframes`${bounce}`;
  
 const BouncyDiv = styled.div`
@@ -29,6 +31,9 @@ const BouncyDiv = styled.div`
 function App() {
   return (
     <div className="App">
+      <Link to="sharableImage">
+        <img src={sharableIcon}/>
+      </Link>
       <section className="Home">
         <article className="visibleTop">
         <div className="inner">
@@ -51,7 +56,7 @@ function App() {
                                 onHover: 1,
                             },
                         }}>
-                    <BouncyDiv>
+                <BouncyDiv>
                 <p>I'm a software Engineer based in Chicago, IL specializing</p>
                 <p>in building wonderful web and mobile applications.</p>
                 </BouncyDiv>
