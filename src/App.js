@@ -31,9 +31,7 @@ const BouncyDiv = styled.div`
 function App() {
   return (
     <div className="App">
-      <Link to="sharableImage">
-        <img src={sharableIcon}/>
-      </Link>
+      
       <section className="Home">
         <article className="visibleTop">
         <div className="inner">

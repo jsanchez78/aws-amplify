@@ -102,3 +102,9 @@ a{
 .sticky + .content {
   padding-top: 60px;
 }
+
+.logo {
+  display: inline;
+  position: fixed;
+  left: 30px;
+}

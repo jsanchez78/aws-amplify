@@ -12,15 +12,41 @@ import { bounce } from 'react-animations';
 
 import styled, { keyframes } from 'styled-components';
 
+import MemoryIcon from '@material-ui/icons/Memory';
+
+import { makeStyles } from '@material-ui/core/styles';
+
 const bounceAnimation = keyframes`${bounce}`;
  
 const BouncyDiv = styled.div`
   animation: 2s ${bounceAnimation};
 `;
 
+
+const useStyles = makeStyles({
+    root: {
+        border: 0,
+        borderRadius: 1,
+        color: '#82b1ff',
+        width: 105,
+        height: 105,
+        padding: '0 30px',
+      },
+
+  });
+
 const Nav = () => {
+        const classes = useStyles();
+
         return (
         <div id="navbar">
+        
+        <div className="logo">
+        <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-70} duration={500}>
+        <MemoryIcon  className={classes.root}/>
+        </Link>
+        </div>
+        <Link activeClass="active" to="ProjectsPage" spy={true} smooth={true} offset={-70} duration={500}></Link>
             <a href={pdf} target="_blank" rel="nofollow noopener noreferrer" id="resume">
                 <Typist id="type">
                     <Typist.Delay ms={1000} />
