@@ -27,7 +27,6 @@ const BouncyDiv = styled.div`
   animation: 2s ${bounceAnimation};
 `;
 
-
 function App() {
   return (
     <div className="App">
@@ -36,14 +35,40 @@ function App() {
         <article className="visibleTop">
         <div className="inner">
         <h1 className="Intro">
-          Hi, my name is 
+        <AnimationWrapper config={{
+                            color: {
+                                initial: 'white',
+                                onHover: '#82b1ff',
+                            },
+                            opacity: {
+                                initial: 1,
+                                onHover: 1,
+                            },
+                        }}>
+                <BouncyDiv> 
+          Hi, my name is
+          </BouncyDiv>
+          </AnimationWrapper> 
         </h1>
-        <h2 className="Name"> 
+        <h2 className="Name">
+              <AnimationWrapper config={{
+                            color: {
+                                initial: 'white',
+                                onHover: '#82b1ff',
+                            },
+                            opacity: {
+                                initial: 1,
+                                onHover: 1,
+                            },
+                        }}>
+                <BouncyDiv> 
           Jacob Luis Sanchez.
+          </BouncyDiv>
+          </AnimationWrapper>
         </h2>
         <div className="Subtitle">
           <Typist>
-              <Typist.Delay ms={1000} />
+              <Typist.Delay ms={5} />
               <AnimationWrapper config={{
                             color: {
                                 initial: 'white',

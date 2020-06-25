@@ -10,6 +10,29 @@ import "../Sass/app.scss"
 
 
 
+
+const getDate = () => {
+  return new Date().getDate().toLocaleString()
+}
+
+const getMonth = () => {
+
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+    ]
+
+  const d = new Date()
+
+  return monthNames[d.getMonth()].toLocaleString()
+
+}
+
+const toggleClass = () => {
+  const oldClassName = document.getElementsByClassName('heart').className;
+  const newClassName = oldClassName === 'animate' 
+  document.getElementsByClassName('heart').className = newClassName
+}
+
 const SocialCard = () => (
     
     <div className="social_card">
@@ -19,7 +42,7 @@ const SocialCard = () => (
           <p>
             @some_lego_guy
             <br />
-            <span>Mar 14</span>
+            <span> {getMonth() + ' ' + getDate()}</span>
           </p>
           <img src={User} alt="@some_lego_guy" />
         </div>
@@ -33,7 +56,7 @@ const SocialCard = () => (
             <img src={Retweet} alt="Retweets" /> 3,843
           </p>
           <p>
-            <img src={Heart} alt="Likes" /> 1,336
+            <img src={Heart} alt="Likes" className="heart" onClick={toggleClass()}/> 1,336
           </p>
         </div>
     

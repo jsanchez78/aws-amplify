@@ -70,7 +70,7 @@ const AboutPage = () => {
                             </ul>
                         </div>
                     </div>
-                        <a href="https://github.com/jsanchez78" className="gitHub">
+                        <a className="gitHub">
                             <SocialCard/>
                         </a>
                 </div>
