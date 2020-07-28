@@ -191,6 +191,10 @@ a:active {
 }
 
 .Home > article {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -moz-transition: opacity 1.5s ease, visibility 1.5s;
   -webkit-transition: opacity 1.5s ease, visibility 1.5s;
   -ms-transition: opacity 1.5s ease, visibility 1.5s;
@@ -218,6 +222,7 @@ a:active {
 }
 
 .Home > article:after {
+
   content: '';
   display: block;
   width: 100%;
