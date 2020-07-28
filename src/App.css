@@ -234,7 +234,13 @@ a:active {
 }
 
 .Home > article img {
-  display: none;
+  display: inline-block;
+  position: relative;
+  background-position-x: left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .Home > article .inner {
