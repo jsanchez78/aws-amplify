@@ -259,7 +259,7 @@ a:active {
   position: relative;
   background-image: url(res/floating.svg);
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center left;
   background-attachment: fixed;
   background-position-x: left;
 }
