@@ -6,7 +6,9 @@ import SocialCard from './SocialCard'
 
 import { bounce } from 'react-animations';
 
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
+
+import { useSpring, animated } from 'react-spring'
 
 const bounceAnimation = keyframes`${bounce}`;
  
@@ -14,7 +16,9 @@ const BouncyDiv = styled.div`
   animation: 2s ${bounceAnimation};
 `;
 
+
 const AboutPage = () => {
+        
         return (
         <section className="About">
             <div id="center">

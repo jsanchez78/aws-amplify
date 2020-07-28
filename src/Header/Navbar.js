@@ -4,6 +4,8 @@ import Typist from 'react-typist'
 import pdf from '../CSResume.pdf'
 
 
+import { Document, Page } from 'react-pdf';
+
 import { Link, animateScroll as scroll } from "react-scroll"
 
 import { AnimationWrapper} from 'react-hover-animation'
@@ -16,12 +18,13 @@ import MemoryIcon from '@material-ui/icons/Memory';
 
 import { makeStyles } from '@material-ui/core/styles';
 
+import PDFViewer from 'pdf-viewer-reactjs'
+
 const bounceAnimation = keyframes`${bounce}`;
  
 const BouncyDiv = styled.div`
   animation: 2s ${bounceAnimation};
 `;
-
 
 const useStyles = makeStyles({
     root: {
@@ -46,8 +49,9 @@ const Nav = () => {
         <MemoryIcon  className={classes.root}/>
         </Link>
         </div>
-        <Link activeClass="active" to="ProjectsPage" spy={true} smooth={true} offset={-70} duration={500}></Link>
-            <a href={pdf} target="_blank" rel="nofollow noopener noreferrer" id="resume">
+        
+        
+            <a href={pdf} target="_blank" rel="nofollow noopener noreferrer" download>
                 <Typist id="type">
                     <Typist.Delay ms={1000} />
                     <AnimationWrapper config={{
@@ -67,6 +71,8 @@ const Nav = () => {
                     </AnimationWrapper>
                 </Typist>
             </a>
+            
+            
             <a href="mailto:sanchezjacob244@gmail.com?subject=Top Secret Sauce&body=Cool website bro! 🍆 " rel="nofollow noopener noreferrer">
                 <Typist>
                     <Typist.Delay ms={1000} />

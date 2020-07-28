@@ -21,21 +21,33 @@ import styled, { keyframes } from 'styled-components';
 
 import sharableIcon from './res/hashS.png'
 
+import { useSpring, animated } from 'react-spring'
+
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
+const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
+const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
 const bounceAnimation = keyframes`${bounce}`;
  
 const BouncyDiv = styled.div`
   animation: 2s ${bounceAnimation};
 `;
 
+
+
 function App() {
+
+  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
+
   return (
     <div className="App">
       
-      <section className="Home">
+      <section className="Home" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+        <animated.div class="Home" style={{ transform: props.xy.interpolate(trans1) }} />
+        <animated.div class="inner" style={{ transform: props.xy.interpolate(trans2) }} />
         <article className="visibleTop">
-        <div className="inner">
-        <h1 className="Intro">
-        <AnimationWrapper config={{
+          <div className="inner">
+            <h1 className="Intro">
+              <AnimationWrapper config={{
                             color: {
                                 initial: 'white',
                                 onHover: '#82b1ff',
@@ -86,7 +98,7 @@ function App() {
                     </AnimationWrapper>
           </Typist>
         </div>
-        </div>
+      </div>
         <img src={float}/>
       </article>
     </section>
