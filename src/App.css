@@ -263,15 +263,7 @@ a:active {
   background-attachment: fixed;
   background-position-x: left;
 }
-.floatingSplit {
-  padding: 8em 0;
-  position: relative;
-  background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-attachment: fixed;
-  background-position-x: left;
-}
+
 
 .Home > article.top {
   z-index: 1;

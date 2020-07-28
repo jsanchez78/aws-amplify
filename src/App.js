@@ -25,7 +25,7 @@ import { useSpring, animated } from 'react-spring'
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
-const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
+
 const bounceAnimation = keyframes`${bounce}`;
  
 const BouncyDiv = styled.div`
@@ -43,7 +43,10 @@ function App() {
       
       <section className="Home" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
         <animated.div class="Home" style={{ transform: props.xy.interpolate(trans1) }} />
-        <animated.div class="inner" style={{ transform: props.xy.interpolate(trans2) }} />
+        {/* 
+          TODO: Can adjust image simpler as so
+          <img src={float}/>
+        */}
         <article className="visibleTop">
           <div className="inner">
             <h1 className="Intro">
@@ -99,7 +102,7 @@ function App() {
           </Typist>
         </div>
       </div>
-        <img src={float}/>
+
       </article>
     </section>
       <AboutPage/>

@@ -8,8 +8,6 @@ import { bounce } from 'react-animations';
 
 import styled, { keyframes } from 'styled-components'
 
-import { useSpring, animated } from 'react-spring'
-
 const bounceAnimation = keyframes`${bounce}`;
  
 const BouncyDiv = styled.div`
