@@ -1,15 +1,12 @@
 import React from 'react'
 
 /*  SVG Icons */
-import Image from "../images/Rooftop.JPG"
+import Image from "../images/google.jpg"
 import User from "../images/user.jpg"
 import Heart from "../images/heart-solid.svg"
 import Share from "../images/share-solid.svg"
 import Retweet from "../images/retweet-solid.svg"
 import "../Sass/app.scss"
-
-
-
 
 const getDate = () => {
   return new Date().getDate().toLocaleString()

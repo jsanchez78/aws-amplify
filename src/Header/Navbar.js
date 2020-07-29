@@ -31,9 +31,9 @@ const useStyles = makeStyles({
         border: 0,
         borderRadius: 1,
         color: '#82b1ff',
-        width: 105,
-        height: 105,
-        padding: '0 30px',
+        width: 70,
+        height: 70,
+        padding: '0 0px',
       },
 
   });
@@ -44,12 +44,11 @@ const Nav = () => {
         return (
         <div id="navbar">
         
-        <div className="logo">
-        <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-70} duration={500}>
-        <MemoryIcon  className={classes.root}/>
-        </Link>
-        </div>
-        
+            <div className="logo">
+                <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-70} duration={500}>
+                    <MemoryIcon  className={classes.root}/>
+                </Link>
+            </div>
         
             <a href={pdf} target="_blank" rel="nofollow noopener noreferrer" download>
                 <Typist id="type">
