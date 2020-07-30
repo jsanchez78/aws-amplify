@@ -14,7 +14,6 @@ const BouncyDiv = styled.div`
   animation: 2s ${bounceAnimation};
 `;
 
-
 const AboutPage = () => {
         
         return (
@@ -72,8 +71,8 @@ const AboutPage = () => {
                             </ul>
                         </div>
                     </div>
-                        <a className="gitHub">
-                            <SocialCard/>
+                        <a className="gitHub me" target="_blank">
+                            <SocialCard className="me"/>
                         </a>
                 </div>
         </section> 

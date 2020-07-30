@@ -26,7 +26,7 @@ import led from "../res/LEDBeats.png"
         {/* Projects Gallery*/}
       <div className="container">
         <div className="work">
-          <a href="https://github.com/jsanchez78/MagicPaper" className="MagicPaper">
+          <a href="https://github.com/jsanchez78/MagicPaper" className="MagicPaper" target="_blank">
             <div id="magic">
                 <h3>MagicPaper </h3>
                 <ul className="categories">
@@ -36,7 +36,7 @@ import led from "../res/LEDBeats.png"
                 </ul>
             </div>
           </a>
-          <a href="https://github.com/jsanchez78/GraphQLClientFrameworkGithub">
+          <a href="https://github.com/jsanchez78/GraphQLClientFrameworkGithub" target="_blank">
             <div id="github">
                 <h3>GraphQL Client Framework </h3>
                 <ul className="categories">
@@ -46,7 +46,7 @@ import led from "../res/LEDBeats.png"
                 </ul>
             </div>
           </a>
-          <a href="https://github.com/jsanchez78/ChicagoTravelGuide">
+          <a href="https://github.com/jsanchez78/ChicagoTravelGuide" target="_blank">
             <div id="travel">
                 <h3>Travel Guide </h3>
                   <ul className="categories">
@@ -56,7 +56,7 @@ import led from "../res/LEDBeats.png"
                   </ul>
             </div>
           </a>
-          <a href="https://github.com/jsanchez78?tab=repositories">
+          <a href="https://github.com/jsanchez78?tab=repositories" target="_blank">
             <div id="led">
                 <h3>LED Flow </h3>
                 <ul className="categories">
@@ -66,7 +66,7 @@ import led from "../res/LEDBeats.png"
                   </ul>
             </div> 
            </a>
-          <a href="https://github.com/jsanchez78/codeGenerator">
+          <a href="https://github.com/jsanchez78/codeGenerator" target="_blank">
             <div id="codeGenerator">
               <h3>Code Generator </h3>
                 <ul className="categories">
@@ -76,7 +76,7 @@ import led from "../res/LEDBeats.png"
                 </ul>  
             </div>
           </a>
-          <a href="https://github.com/jsanchez78/aws-amplify">
+          <a href="https://github.com/jsanchez78/aws-amplify" target="_blank">
             <div id="portfolioWebsite">
               <p id="res">Deployed site</p>
               <h3>Personal Website</h3>

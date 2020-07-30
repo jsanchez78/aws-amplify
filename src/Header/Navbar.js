@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './navbar.css'
 import Typist from 'react-typist'
-import pdf from '../CSResume.pdf'
+import PdfFile from '../CSResume.pdf'
 
 
 import { Document, Page } from 'react-pdf';
@@ -50,7 +50,7 @@ const Nav = () => {
                 </Link>
             </div>
         
-            <a href={pdf} target="_blank" rel="nofollow noopener noreferrer" download>
+            <a href={PdfFile} target="_blank" rel="nofollow noopener noreferrer">
                 <Typist id="type">
                     <Typist.Delay ms={1000} />
                     <AnimationWrapper config={{
@@ -63,15 +63,19 @@ const Nav = () => {
                                 onHover: 1,
                             },
                         }}>
+                    
                     <BouncyDiv>
+                    
                     <span id="nav_nums"> 04. </span>
                     <span id="category">Resume</span>
+                
                     </BouncyDiv>
+                    
                     </AnimationWrapper>
+
                 </Typist>
             </a>
-            
-            
+                        
             <a href="mailto:sanchezjacob244@gmail.com?subject=Top Secret Sauce&body=Cool website bro! 🍆 " rel="nofollow noopener noreferrer">
                 <Typist>
                     <Typist.Delay ms={1000} />

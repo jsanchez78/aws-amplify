@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "file-loader": "6.0.0",
     "typescript": "3.9.5"
   }
 }
